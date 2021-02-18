@@ -1,0 +1,68 @@
+/* Left and right text field s*/
+.input-area, .second-input-area {
+  display: inline-block;
+  max-width: 320px;
+  text-align: left;
+  width: calc(100vw - 25px - 25px - 25px - 25px);
+}
+
+/* Right text field */
+.second-input-area {
+  margin-left: 20px;
+}
+
+/* Descriptive texts for the text fields */
+.input-area label, .second-input-area label {
+  display: block;
+  margin-left: 2px;
+}
+
+/* Descriptive texts for the text area */
+label[for="message"] {
+  display: block;
+  transform: translateX(-296px);
+}
+
+/* "Send" button */
+form button[type="submit"] {
+  margin-top: 10px;
+  transform: translateX(-256px);
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 763px) {
+
+  /* Right text field */
+  .second-input-area {
+    margin: 0 10px;
+  }
+
+  /* Descriptive texts for the text area */
+  label[for="message"] {
+    transform: translateX(-126px);
+  }
+
+  /* "Send" button */
+  form button[type="submit"] {
+    transform: none;
+  }
+
+}
+
+@media screen and (max-width: 441px) {
+
+  /* Right text field */
+  .second-input-area {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 421px) {
+
+  /* Descriptive texts for the text area */
+  label[for="message"] {
+    transform: translateX(calc(-50vw + 25px + 25px + 25px + 10px));
+  }
+
+}

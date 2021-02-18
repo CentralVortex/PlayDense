@@ -1,0 +1,53 @@
+/* Main container */
+.ordered {
+  background-color: #090910;
+  border-radius: 11.25px;
+  max-width: calc(100vw - 25px - 25px);
+  padding: 25px;
+}
+
+/* Title text */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+/* Scrollbar background (Safari, Opera, Chrome) */
+.table-container::-webkit-scrollbar {
+  background-color: #1a1a2f;
+}
+
+/* Scrollbar thumb (Safari, Opera, Chrome) */
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #7fa1bb;
+  border-radius: 22.5px;
+}
+
+/* Table */
+table {
+  font-size: 1.125rem;
+  min-width: 850px;
+  width: 100%;
+}
+
+/* Table heading */
+th {
+  background-color: #11111f;
+  border: 1px solid #c4d4e0;
+  color: #7fa1bb;
+}
+
+/* Table row */
+tr {
+  background-color: #1a1a2f;
+}
+
+/* Table data (column) */
+td {
+  padding: 5px;
+}

@@ -1,0 +1,115 @@
+/* Header */
+.header {
+  box-shadow: 0 25px 25px black;
+  height: 84px;
+  padding: 25px 0;
+  width: 100%;
+}
+
+/* Logo */
+.header-logo {
+  display: inline-block;
+  left: 30px;
+  position: relative;
+  top: 5px;
+  width: 150px;
+}
+
+/* Menu */
+.menu-container {
+  display: inline-block;
+  max-width: 400px;
+  position: absolute;
+  right: 30px;
+  width: calc(100vw - 150px - 30px - 60px - 30px);
+}
+
+/* Menu list */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* Menu items */
+.menu-item {
+  background-color: #000E;
+  border: 2px solid #7fa1bb;
+  border-radius: 90px;
+  display: inline-block;
+  height: 14vw;
+  margin: 0 5px;
+  max-height: 80px;
+  max-width: 80px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  width: 14vw;
+  z-index: 2;
+}
+
+/* Menu item for current page */
+.current-item {
+  -webkit-filter: invert(11%) sepia(34%) saturate(6392%) hue-rotate(334deg) brightness(97%) contrast(106%);
+  filter: invert(11%) sepia(34%) saturate(6392%) hue-rotate(334deg) brightness(97%) contrast(106%);
+}
+
+/* Icons */
+.menu-item img {
+  height: calc(100% - 5px - 5px);
+  margin: 5px;
+  width: calc(100% - 5px - 5px);
+}
+
+/* All icons, but the icon for the current page */
+.menu-item img:not(.current-item) {
+  -webkit-filter: invert(91%) sepia(12%) saturate(324%) hue-rotate(170deg) brightness(91%) contrast(91%);
+  filter: invert(91%) sepia(12%) saturate(324%) hue-rotate(170deg) brightness(91%) contrast(91%);
+}
+
+/* Menu items on hover */
+.menu-item:hover {
+  transform: scale(1.1);
+}
+
+/* Content */
+.content {
+  margin: 50px auto;
+  max-width: 900px;
+  min-height: calc(100vh - 134px - 50px - 50px);
+  text-align: center;
+  width: calc(100vw - 25px - 25px);
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 650px) {
+
+  /* Header */
+  .header {
+    height: 210px;
+    text-align: center;
+  }
+
+  /* Logo */
+  .header-logo {
+    left: 0;
+    margin-bottom: 35px;
+    position: relative;
+  }
+
+  /* Menu */
+  .menu-container {
+    display: block;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: 0;
+    width: calc(100vw - 30px - 30px);
+  }
+
+  /* Content */
+  .content {
+    min-height: calc(100vh - 260px - 50px);
+  }
+
+}

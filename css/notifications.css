@@ -1,0 +1,57 @@
+/* Dark overlay */
+.background {
+	background-color: #000B;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 100;
+}
+
+/* Error notification */
+.error-notification {
+	background-color: #222;
+	border: 2px solid #72081b;
+	border-radius: 11.25px;
+	bottom: 0;
+	height: 50px;
+	left: 0;
+	margin: auto;
+	max-width: 500px;
+	padding: 25px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: calc(100vw - 25px - 25px - 2px - 2px - 10px - 10px);
+	z-index: 2;
+}
+
+/* Title text of error notification */
+.error-notification-title {
+	color: #72081b;
+	margin-bottom: 0;
+}
+
+/* Info notification */
+.info-notification {
+	background-color: #222;
+	border: 2px solid #7fa1bb;
+	border-radius: 11.25px;
+	bottom: 0;
+	height: 50px;
+	left: 0;
+	margin: auto;
+	max-width: 500px;
+	padding: 25px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: calc(100vw - 25px - 25px - 2px - 2px - 10px - 10px);
+	z-index: 2;
+}
+
+/* Title text of info notification */
+.info-notification-title {
+	color: #7fa1bb;
+	margin-bottom: 0;
+}

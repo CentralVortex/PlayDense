@@ -1,0 +1,119 @@
+/* Header */
+.header {
+  background: url("../resources/mountain.jpg") no-repeat center center / cover;
+  box-shadow: 0 25px 25px black;
+  height: 100vh;
+  min-height: calc((100vw / 16 * 9) - 100px);
+  text-align: center;
+  width: 100%;
+}
+
+/* Image overlay */
+.header-overlay {
+  background-color: #0007;
+  height: 100%;
+}
+
+/* Header content*/
+.header-content {
+  bottom: 0;
+  height: calc(14vw + 25px + 45vw);
+  margin: auto;
+  max-height: 594px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Logo */
+.header-logo {
+  max-width: 300px;
+  padding: 79.5px 0;
+  width: 45vw;
+}
+
+/* Menu */
+.menu-container {
+  left: 0;
+  margin: auto;
+  max-width: 950px;
+  position: relative;
+  right: 0;
+  width: 80%;
+}
+
+/* Menu list */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+/* Menu items */
+.upper-menu-item, .menu-item {
+  background-color: #000E;
+  border: 2px solid #7fa1bb;
+  border-radius: 90px;
+  display: inline-block;
+  height: 14vw;
+  margin: 0 5px;
+  max-height: 140px;
+  max-width: 140px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  width: 14vw;
+  z-index: 2;
+}
+
+/* Upper menu items */
+.upper-menu-item {
+  transform: translateY(-25px);
+}
+
+/* Item of current page */
+.current-item {
+  -webkit-filter: invert(11%) sepia(34%) saturate(6392%) hue-rotate(334deg) brightness(97%) contrast(106%);
+  filter: invert(11%) sepia(34%) saturate(6392%) hue-rotate(334deg) brightness(97%) contrast(106%);
+}
+
+/* Icons */
+.upper-menu-item img, .menu-item img {
+  height: calc(100% - 15px - 15px);
+  margin: 15px;
+  width: calc(100% - 15px - 15px);
+}
+
+/* Icons of all pages but the current page */
+.upper-menu-item img:not(.current-item), .menu-item img:not(.current-item) {
+  -webkit-filter: invert(91%) sepia(12%) saturate(324%) hue-rotate(170deg) brightness(91%) contrast(91%);
+  filter: invert(91%) sepia(12%) saturate(324%) hue-rotate(170deg) brightness(91%) contrast(91%);
+}
+
+/* Upper menu item hover */
+.upper-menu-item:hover {
+  transform: translateY(-25px) scale(1.1);
+}
+
+/* Menu item hover */
+.menu-item:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 759px) {
+
+  /* Menu items */
+  .upper-menu-item, .menu-item {
+    height: 16vw;
+    width: 16vw;
+  }
+
+  /* Icons */
+  .upper-menu-item img, .menu-item img {
+    height: calc(100% - 5px - 5px);
+    margin: 5px;
+    width: calc(100% - 5px - 5px);
+  }
+
+}

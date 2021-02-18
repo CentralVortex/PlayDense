@@ -1,0 +1,58 @@
+/* Main container */
+.rooms {
+  background-color: #090910;
+  border-radius: 11.25px;
+  max-width: calc(100vw - 25px - 25px);
+  padding: 25px;
+  user-select: none;
+}
+
+/* Every small text */
+.rooms span {
+  font-size: 1.125rem;
+  letter-spacing: 1.4px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Every small text except for the themes */
+.rooms span:not(.room-theme) {
+  display: block;
+}
+
+/* Dates, times, types and themes */
+.room-date div, .room-date span:not(.room-subtitle) {
+  transition: all 0.5s ease;
+}
+
+/* Dates, times and types */
+.room-date, .room-time, .room-type {
+  width: calc(100% - 10px - 10px - 10px - 10px);
+}
+
+/* Dates, times, types and themes */
+.room-date, .room-time, .room-type, .room-theme {
+  border-radius: 11.25px;
+  display: inline-block;
+  margin: 10px;
+  overflow-y: hidden;
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+/* Dates and types */
+.room-date, .room-type {
+  background-color: #11111f;
+}
+
+/* Times and themes */
+.room-time, .room-theme {
+  background-color: #1a1a2f;
+}
+
+/* Disabled elements (= not clickable) */
+.disabled {
+  background-color: #72081b;
+  border: 1px solid #c4d4e0;
+}

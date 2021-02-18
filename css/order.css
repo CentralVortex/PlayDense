@@ -1,0 +1,29 @@
+/* Text fields */
+.inputs {
+  left: 0;
+  margin: auto;
+  max-width: 320px;
+  right: 0;
+  text-align: left;
+  width: calc(100vw - 25px - 25px - 25px - 25px);
+}
+
+/* Descriptive texts */
+.inputs label {
+  display: block;
+  margin-left: 2px;
+}
+
+/* Buttons */
+button {
+  background-color: #1a1a2f;
+  margin: 10px 0 0;
+  max-width: 320px;
+  width: calc(100vw - 25px - 25px - 25px - 25px);
+}
+
+/* "Order" button */
+button[type="submit"] {
+  background-color: #72081b;
+  margin: 20px 0 0;
+}
